@@ -11,7 +11,7 @@ names = ["setosa", "versicolor", "virginica"]
 
 @app.get("/")
 def home():
-    return jsonify({"service": "iris-prediction-v2", "usage": "POST /predict with four measurements"})
+    return jsonify({"service": "iris-prediction", "usage": "POST /predict with four measurements"})
 
 
 @app.post("/predict")
